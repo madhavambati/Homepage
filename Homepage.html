@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<head>
+<style>
+
+body{
+   background-image:url("http://wallpapercave.com/wp/P4LP9H0.jpg");
+
+  background-position:center ;
+  background-repeat:none;
+  background-size:100% 100%;
+  background-attachment:fixed;
+
+ }
+
+html,body{
+   overflow:hidden;
+}
+
+
+
+#mid{
+  margin:28vh auto;
+  margin-bottom:0;
+  font-family: Arial;
+  color:#f2f2f2;
+  opacity:1;
+  text-align:center;
+  font-size:150px;
+}
+
+
+
+#mid-bottom{
+   margin:2.5vh auto;
+   text-align:center;
+   color:#f2f2f2;
+   opacity:0.9;
+   font-size:50px;
+   font-family:Arial;
+
+}
+
+
+#bottom1{
+  margin:1.5vh auto;
+  text-align:center;
+   color:#f2f2f2;
+   opacity:0.9;
+   font-size:45px;
+   font-family:Arial;
+
+}
+
+
+#bottom{
+  font-family:Arial;
+  text-align:center;
+
+  margin-top:16vh;
+  color:#f2f2f2;
+  font-size:20px;
+opacity:0.9;
+}
+
+
+p1{
+
+font-family:Arial;
+  opacity:0.5;
+
+
+  color:#f2f2f2;
+  font-size:20px;
+}
+
+
+</style>
+ </head>
+
+
+     <p1>#Made By Me<p1>
+
+     <div id="mid">
+        <h1></h1>
+      </div>
+
+      <div id="mid-bottom">
+        <h5 style="margin:0;"></h5>
+      </div>
+
+
+      <div id="bottom1">
+        <h6 style="margin:0;">#Let me google that for u....</h6>
+      </div>
+
+
+
+
+     <div id="bottom">
+        <p>"The greater the lie, the greater the chance that it will be believed."</p>
+     </div>
+
+
+
+
+
+
+<script>
+
+{
+function addZero(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
+
+function TIME() {
+    var d = new Date();
+    var x = document.getElementById("mid");
+    var h = addZero(d.getHours());
+    var m = addZero(d.getMinutes());
+    var s = addZero(d.getSeconds());
+    time=x.innerHTML = h + ":" + m + ":" + s;
+
+
+
+   if(h>=6 && h<=12){
+     document.getElementById("mid-bottom").innerHTML="Good Morning,Madhav!!!";
+
+    }
+
+
+   if(h>12 && h<=18){
+     document.getElementById("mid-bottom").innerHTML="Good Afternoon,Madhav!!!";
+   }
+
+
+   if(h>=18 && h<=24){
+document.getElementById("mid-bottom").innerHTML="Good Evening,Madhav!!!";
+
+}
+
+   if(h>=0 && h<6){
+document.getElementById("mid-bottom").innerHTML="Good Night,Madhav!!!";
+
+}
+
+return time;
+}
+
+
+
+
+
+ setInterval(TIME,1000);
+}
+</script>
+
+
+</body>
+</html>
